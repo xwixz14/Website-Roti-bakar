@@ -3,25 +3,26 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Fira Sans', sans-serif;
-  
 }
+/* Navigation */
 .Navbar-Menu{
     width: 100%;
     height: 100vh;
-    background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)),url('asset/gamabr2.jpg');
-    background-repeat: no-repeat;
+    background-image: url('asset/back\ .jpg');
     background-size: cover;
-    
+    background-repeat: no-repeat;   
 }
 .menu{
+    
     width: 100%;
     height: 80px;
     position: relative;
-    top: 30px;
+    top: 10px;
     background-color: #f0f0f0;
     box-shadow: 2px -1px 10px 2px rgba(0,0,0,0.75);
     -webkit-box-shadow: 2px -1px 10px 2px rgba(0,0,0,0.75);
     -moz-box-shadow: 2px -1px 10px 2px rgba(0,0,0,0.75);
+    position:fixed;
 }
 .leftside{
     /* width: 10%; */
@@ -29,14 +30,17 @@
     position: relative;
     float: left;     
 }
+
 .leftside img{
-    width: 250px;
+    width: 100px;
     height: auto;
     position: absolute;
-    top:-50px;
-    left: 50px;
+    top:-20px;
+    left: 30px;
 }
+
 .rightside{
+   
     width: auto;
     height: 80px;
     float: right;
@@ -44,6 +48,7 @@
     align-items: center;
     padding-right: 20px;
     justify-content: right;
+    
 }
 .rightside a{
     font-size: 15px;
@@ -93,28 +98,18 @@
 .rightside i{
     font-size: 18px;
 }
-#Roti-Bakar{
-    padding: 12px 20px;
-    background-color: #c37a3e;
-    color: #fff;
-    border-radius: 5px;
 
-    transition: 0.5s;
-}
-#Roti-Bakar:hover{
-    background-color: #7c4a21;
-}
+/* Header */
 .heading{
-    
     position: absolute;
     right: 5%;
     bottom: 20%;
     text-align:right;
 }
 .heading h2{
-    font : 100px italic;
+    font-size: 50px;
     color: #fff;
-   
+    background-color: rgba(0,0,0,0.2);
 }
 .heading p{
     font-size: 14px;
@@ -153,7 +148,29 @@
     background-color: rgba(0,0,0,0.1);
     font-weight: 500;
 }
+@keyframes change{
+    0%{
+        color: #c37a3e;
+    }
+    20%{
+        color: purple;
+    }
+    40%{
+        color: yellow;
+    }
+    60%{
+        color: teal;
+    }
+    80%{
+        color: #fff;
+    }
+    100%{
+        color: #000;
+    }
+}
 
+
+/* Tampilan About */
 .second-Sec{
     width: 100%;
     height: auto;
@@ -195,13 +212,82 @@
     margin: 30px 0;
 }
 
+/* Menu Roti Bakar */
+.MenuSection{
+    width: 100%;
+    height: auto;
+    text-align: center;
+    background-color: whitesmoke;
+    padding: 100px 0;
+}
+.MenuSection img{
+    height: 300px;
+    margin: 20px 0px;
+}
+.MenuSection h1{
+    font-size: 35px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #c37a3e;
+    display: inline-block;
+}
+.MenuSection p{
+    font-size: 18px;
+    color: rgba(0,0,0,0.6);
+    padding: 25px 0;   
+}
 
+.row {
+    
+        -webkit-transition: 0.4s ease;
+        transition: 0.4s ease;
+       
+    
+    }
+.row img:hover{
+           -webkit-transform: scale(1.08);
+           transform: scale(1.08);
+    
+}
+.Bakery-menu{
+    margin-top: 30px;
+}
+.Bakery-menu h3{
+    padding: 10px 20px;
+    font-size: 18px;
+    color: #c37a3e;
+    text-align: left;
+    font-weight: bold;
+}
+.Bakery-menu h6{
+    padding: 10px 0px 5px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    float: left;
+}
+#Weight{
+    font-size: 12px;
+    color: rgba(0,0,0,0.6);
+    font-weight: lighter;
+}
+.Bakery-menu a{
+    float: right;
+    margin-right: 30px;
+    padding: 5px 13px;
+    background-color: #c37a3e;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 0.5s;
+}
+.Bakery-menu a:hover{
+    background-color: #7c4a21;
+}
 
-
+/* Feedback */
 .Feedback{
     width: 100%;
     height: auto;
-    padding: 50px 0 0 0;
+    padding: 100px 0 0 0;
     text-align: center;
     margin: 0;
 }
@@ -218,10 +304,10 @@
 }
 .feedback-background{
     width: 100%;
-    height: 60vh;
-    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url('https://media.istockphoto.com/photos/homemade-sweet-chocolate-cupcakes-picture-id615286712?k=20&m=615286712&s=612x612&w=0&h=YQkiXhBHecMn1Oi2228WL0KmVC9KHCTriP8vB49OGHk=');
+    height: 80vh;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(asset/Roti\ Bakar\ Coklat.jpeg);
     background-attachment: fixed;
-    background-position: center;
+    background-position:center;
     background-size:cover;
     background-repeat: no-repeat;
     position: relative;
@@ -252,11 +338,12 @@
     background-color: #7c4a21;
 }
 
+/* Footer */
 .footer{
     width: 100%;
     height: auto;
     background-color: rgba(0,0,0,0.1);
-    padding: 50px 0  0 0;
+    padding: 100px 0  0 0;
     text-align: center;
 }
 .footer h3{
@@ -283,8 +370,14 @@
     color: #7c4a21;
 }
 
-
-
+.Copyright h4{
+    font-size: 18px;
+    line-height: 100px;
+}
+#Name{
+    color: rgba(0,0,0,0.8);
+    font-weight: bold;
+}
 #last-logo{
     font-size: 30px;
     font-style: italic;
@@ -292,3 +385,4 @@
     color: #c37a3e;
     font-weight: bold;
 }
+
