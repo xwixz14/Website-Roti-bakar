@@ -2,13 +2,14 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Fira Sans', sans-serif;
+    font-family:  'Bebas Neue', sans-serif;
 }
+
 /* Navigation */
 .Navbar-Menu{
     width: 100%;
     height: 100vh;
-    background-image: url('asset/back\ .jpg');
+    background-image: url('asset/back.1.jpg');
     background-size: cover;
     background-repeat: no-repeat;   
 }
@@ -17,13 +18,16 @@
     width: 100%;
     height: 80px;
     position: relative;
-    top: 10px;
+    top: 1px;
     background-color: #f0f0f0;
     box-shadow: 2px -1px 10px 2px rgba(0,0,0,0.75);
     -webkit-box-shadow: 2px -1px 10px 2px rgba(0,0,0,0.75);
     -moz-box-shadow: 2px -1px 10px 2px rgba(0,0,0,0.75);
     position:fixed;
 }
+
+
+
 .leftside{
     /* width: 10%; */
     height: 80px;
@@ -51,7 +55,7 @@
     
 }
 .rightside a{
-    font-size: 15px;
+    font-size: 17px;
     font-weight: 600;
     text-transform: uppercase;
     color: rgba(0,0,0,0.9);
@@ -107,7 +111,7 @@
     text-align:right;
 }
 .heading h2{
-    font-size: 50px;
+    font-size: 100px;
     color: #fff;
     background-color: rgba(0,0,0,0.2);
 }
@@ -385,4 +389,3 @@
     color: #c37a3e;
     font-weight: bold;
 }
-
